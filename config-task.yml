@@ -25,7 +25,7 @@ repositoryUrl: 'https://github.com/blurtopian/git_archiver_v2' #replace with you
 
 ## Image URL ##
 # 230x86 pixels.
-imageUrl: 'https://i.ibb.co/N1H5YB4/final-uploaded-image-with-gradient.png'
+imageUrl: 'https://raw.githubusercontent.com/blurtopian/git_archiver_v2/refs/heads/main/public/images/modern_archive_logo_230x86.png'
 
 ## Info URL ##
 infoUrl: "infoUrl"
