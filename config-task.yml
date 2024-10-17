@@ -119,7 +119,7 @@ environment: "PRODUCTION"
 #################################### FOR UPDATING TASKS ONLY ####################################
 
 ## Old Task ID ##
-task_id: "GxWTyD966iPDyXWGgC4oxdz4sK88e1ZmwABDVM1HRSzJ"
+task_id: "9uNJ5vZRWgiN18R9xGo115LdCkC2mNR3y1NWyEYfSuGi"
 
 ## Migration Description ##
-migrationDescription: "Updated task description"
+migrationDescription: "Updated task dependencies"
