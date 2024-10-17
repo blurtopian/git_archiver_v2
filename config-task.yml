@@ -99,13 +99,17 @@ requirementsTags:
     value: "5 GB"
   - type: STORAGE
     value: "5 GB"
+- type: TASK_VARIABLE
+    value: 'GIT_REPO'
+    description: 'Link to repo whose issues, pull requests, and commits will be retrieved'
   - type: TASK_VARIABLE
-    value: "TEST_VARIABLE"
-    description: "An example to demonstrate the use of task variables."
+    value: 'GIT_ACCESS_TOKEN'
+    description: 'Token to use access github repositories.'
+
 
 ## Tags ##
 # See https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags for available tag options.
-tags: ["Witness"]
+tags: ["Data Gathering"]
 
 # Environment ##
 # TEST or PRODUCTION
