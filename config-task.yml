@@ -66,7 +66,7 @@ task_type: "KPL"
 
 ## Token Mint Address (ONLY for KPL tasks) ##
 # The Fire Token address is provided as an example.
-token_type: "FJG2aEPtertCXoedgteCCMmgngSZo1Zd715oNBzR7xpR"
+token_type: "F6uoW5fZgmyrdnvULDA7LoyNZrBJcaVHRhqsD5nxfYLo"
 
 ## Total Bounty Amount ##
 # The total bounty amount that will be available for distribution over all rounds.
@@ -88,7 +88,7 @@ allowed_failed_distributions: 3
 # Expected Task Data Size in MBs for the account size.
 # Minimums: 2 for whitelisted tasks, 1 for production, 0.1 for testing.
 # See https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#space for calculation details.
-space: 0.1
+space: 1
 
 ## Requirement Tags (Optional) ##
 # To add more global variables and task variables, please refer to the type, value, description format shown below.
@@ -99,7 +99,7 @@ requirementsTags:
     value: "5 GB"
   - type: STORAGE
     value: "5 GB"
-- type: TASK_VARIABLE
+  - type: TASK_VARIABLE
     value: 'GIT_REPO'
     description: 'Link to repo whose issues, pull requests, and commits will be retrieved'
   - type: TASK_VARIABLE
