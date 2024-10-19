@@ -100,9 +100,6 @@ requirementsTags:
   - type: STORAGE
     value: "5 GB"
   - type: TASK_VARIABLE
-    value: 'GIT_REPO'
-    description: 'Link to repo whose issues, pull requests, and commits will be retrieved'
-  - type: TASK_VARIABLE
     value: 'GIT_ACCESS_TOKEN'
     description: 'Token to use access github repositories.'
 
