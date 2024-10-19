@@ -1,6 +1,6 @@
 import { namespaceWrapper } from "@_koii/namespace-wrapper";
-import { gitTask } from './GitTask.js';
-import { searchRandomRepo } from './github.js';
+import { gitTask } from './GitTask.cjs';
+import { searchRandomRepo } from './github.cjs';
 
 
 export async function task(roundNumber) {
