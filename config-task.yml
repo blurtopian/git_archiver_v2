@@ -102,6 +102,9 @@ requirementsTags:
   - type: TASK_VARIABLE
     value: 'GIT_ACCESS_TOKEN'
     description: 'Token to use access github repositories.'
+  - type: TASK_VARIABLE
+    value: 'MAX_REPO_SIZE_MB'
+    description: 'Maximum size of repository to download in MBytes.'
 
 
 ## Tags ##
@@ -116,7 +119,7 @@ environment: "PRODUCTION"
 #################################### FOR UPDATING TASKS ONLY ####################################
 
 ## Old Task ID ##
-task_id: "3Ljcap56M6Uat1XnXbDYbd9aKZZTeNM9tYMz63t3C2x3"
+task_id: "2EnG72scciDrwASMPRwmqQBbMbgu1NS81M9WW4fFPU24"
 
 ## Migration Description ##
-migrationDescription: "More bug fixes"
+migrationDescription: "Return upload using KOII storage sdk"

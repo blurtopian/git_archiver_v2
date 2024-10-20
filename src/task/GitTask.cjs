@@ -1,5 +1,4 @@
-// const { KoiiStorageClient } = require('@_koii/storage-task-sdk');
-const { v4: uuidv4 } = require("uuid");
+const { KoiiStorageClient } = require("@_koii/storage-task-sdk");
 const { namespaceWrapper } = require("@_koii/namespace-wrapper");
 const fs = require("fs");
 const archiver = require("archiver");
@@ -72,11 +71,9 @@ class GitTask {
     const cloneDir = `${basePath}/${repoName}`;
     const zipPath = `${cloneDir}.zip`;
     try {
-      // TODO: Upload via IPFS
-      // const client = new KoiiStorageClient();
-      // const userStaking = await namespaceWrapper.getSubmitterAccount();
-      // const { cid } = await client.uploadFile(zipPath, userStaking);
-      const cid = uuidv4();
+      const client = new KoiiStorageClient();
+      const userStaking = await namespaceWrapper.getSubmitterAccount();
+      const { cid } = await client.uploadFile(zipPath, userStaking);
 
       console.log(`Stored file CID: ${cid}`);
 
@@ -168,17 +165,16 @@ class GitTask {
   }
 
   async retrieveAndValidateFile(cid) {
-    // TODO: instantiate the storage client
-    // const client = new KoiiStorageClient();
-    // const repoName = this.repo?.name;
-    // const filename = `${repoName}.zip`;
+    // instantiate the storage client
+    const client = new KoiiStorageClient();
+    const repoName = this.repo?.name;
+    const filename = `${repoName}.zip`;
 
     try {
       // get the uploaded file using the IPFS CID we stored earlier and the filename (in this case, `dealsData.json`)
-      // const upload = await client.getFile(cid, filename);
+      const upload = await client.getFile(cid, filename);
       // return whether or not the file exists
-      // return !!upload;
-      return true;
+      return !!upload;
     } catch (error) {
       console.error("Failed to download or validate file from IPFS:", error);
       throw error;

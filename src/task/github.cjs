@@ -3,7 +3,8 @@ const axios = require("axios");
 const GITHUB_API_URL = "https://api.github.com";
 const ACCESS_TOKEN = process.env.GIT_ACCESS_TOKEN; // Replace with your actual token
 const TEST_KEYWORD = process.env.TEST_KEYWORD; // You can change this to any keyword you like
-const MAX_REPO_SIZE_BYTES = 10 * 1024 * 1024; // Example condition: 100 MB
+// const MAX_REPO_SIZE_BYTES = 10 * 1024 * 1024; // Example condition: 100 MB
+const MAX_REPO_SIZE_BYTES = (process.env.MAX_REPO_SIZE_MB || 10) * 1024 * 1024; // Example condition: 10 MB
 
 async function searchRandomRepo() {
   try {
